@@ -8,13 +8,12 @@ metadata:
 deployments:
   - name: CSV data
     application: CSV data
-    deploymentType: Service
+    deploymentType: Job
     version: 4ae7300c43eef4d6c2bccbce592c0b07d6f0ec1f
     resources:
       cpu: 200
       memory: 500
       replicas: 1
-    desiredStatus: Running
     variables:
       - name: output
         inputType: OutputTopic
