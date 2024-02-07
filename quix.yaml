@@ -6,56 +6,6 @@ metadata:
 
 # This section describes the Deployments of the data pipeline
 deployments:
-  - name: CSV data
-    application: CSV data
-    deploymentType: Service
-    version: ee577b2c7d5da0e4417a7e54c21b1b23a00e3a33
-    resources:
-      cpu: 200
-      memory: 500
-      replicas: 1
-    desiredStatus: Running
-    variables:
-      - name: output
-        inputType: OutputTopic
-        description: Name of the output topic to write into
-        required: true
-        value: csv-data
-  - name: Counter
-    application: Counter
-    deploymentType: Service
-    version: ee577b2c7d5da0e4417a7e54c21b1b23a00e3a33
-    resources:
-      cpu: 200
-      memory: 500
-      replicas: 1
-    desiredStatus: Running
-    variables:
-      - name: input
-        inputType: InputTopic
-        description: Name of the input topic to listen to.
-        required: false
-        value: csv-data
-      - name: output
-        inputType: OutputTopic
-        description: Name of the output topic to write to.
-        required: false
-        value: counted-names
-  - name: Destination
-    application: Destination
-    deploymentType: Service
-    version: ee577b2c7d5da0e4417a7e54c21b1b23a00e3a33
-    resources:
-      cpu: 200
-      memory: 500
-      replicas: 1
-    desiredStatus: Running
-    variables:
-      - name: input
-        inputType: InputTopic
-        description: Name of the input topic to listen to.
-        required: false
-        value: counted-names
 
 # This section describes the Topics of the data pipeline
 topics:
