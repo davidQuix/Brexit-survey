@@ -1,101 +1,101 @@
-Timestamp,Number,Name
-1687516100000000000,1,Scarlett
-1687516095000000000,2,Charles
-1687516100000000000,3,James
-1687516095000000000,4,Amelia
-1687516100000000000,5,Grace
-1687516095000000000,6,Luna
-1687516100000000000,7,Hannah
-1687516095000000000,8,Carter
-1687516100000000000,9,Hazel
-1687516095000000000,10,Leo
-1687516100000000000,11,Mason
-1687516095000000000,12,David
-1687516100000000000,13,Lily
-1687516095000000000,14,Leah
-1687516095000000000,15,Mila
-1687516100000000000,16,Isaiah
-1687516095000000000,17,Mila
-1687516100000000000,18,Samuel
-1687516095000000000,19,Claire
-1687516100000000000,20,Daniel
-1687516095000000000,21,Julian
-1687516100000000000,22,Violet
-1687516095000000000,23,Isaiah
-1687516100000000000,24,Aurora
-1687516095000000000,25,Hunter
-1687516100000000000,26,David
-1687516095000000000,27,Lucy
-1687516095000000000,28,Charles
-1687516100000000000,29,Carter
-1687516095000000000,30,Connor
-1687516100000000000,31,Gabriel
-1687516095000000000,32,Sophia
-1687516100000000000,33,Sebastian
-1687516095000000000,34,Mila
-1687516100000000000,35,Charles
-1687516095000000000,36,Avery
-1687516100000000000,37,Alexander
-1687516095000000000,38,Matthew
-1687516100000000000,39,Ezra
-1687516095000000000,40,Audrey
-1687516095000000000,41,Caleb
-1687516100000000000,42,Evelyn
-1687516095000000000,43,Abigail
-1687516100000000000,44,Evelyn
-1687516095000000000,45,Eli
-1687516100000000000,46,James
-1687516095000000000,47,Addison
-1687516100000000000,48,Luke
-1687516095000000000,49,Zoey
-1687516100000000000,50,Carter
-1687516095000000000,51,John
-1687516100000000000,52,Zoey
-1687516095000000000,53,Audrey
-1687516095000000000,54,Luna
-1687516100000000000,55,Lillian
-1687516095000000000,56,Mason
-1687516100000000000,57,Ryan
-1687516095000000000,58,Grace
-1687516100000000000,59,Leo
-1687516095000000000,60,Nora
-1687516100000000000,61,Hannah
-1687516095000000000,62,Mia
-1687516100000000000,63,Zoe
-1687516095000000000,64,Scarlett
-1687516100000000000,65,Mila
-1687516095000000000,66,Wyatt
-1687516095000000000,67,Bella
-1687516100000000000,68,Ethan
-1687516095000000000,69,Jacob
-1687516100000000000,70,Aiden
-1687516095000000000,71,Luke
-1687516100000000000,72,Hannah
-1687516095000000000,73,Logan
-1687516100000000000,74,Landon
-1687516095000000000,75,Jeremiah
-1687516100000000000,76,Thomas
-1687516095000000000,77,Penelope
-1687516100000000000,78,Addison
-1687516095000000000,79,Emma
-1687516095000000000,80,Skylar
-1687516100000000000,81,Elizabeth
-1687516095000000000,82,Skylar
-1687516100000000000,83,Emma
-1687516095000000000,84,Christopher
-1687516100000000000,85,Mila
-1687516095000000000,86,Wyatt
-1687516100000000000,87,Connor
-1687516095000000000,88,Savannah
-1687516100000000000,89,Stella
-1687516095000000000,90,Isabella
-1687516100000000000,91,Isaac
-1687516095000000000,92,Christian
-1687516095000000000,93,Brooklyn
-1687516100000000000,94,Sebastian
-1687516095000000000,95,Brooklyn
-1687516100000000000,96,Addison
-1687516095000000000,97,Ezra
-1687516100000000000,98,Skylar
-1687516095000000000,99,Bella
-1687516100000000000,100,Joseph
+ID,Age,Gender,Location,Vote
+1, 35, Male, London, Support
+2, 45, Female, Manchester, Oppose
+3, 28, Non-binary, Glasgow, Neutral
+4, 50, Male, Birmingham, Support
+5, 38, Female, Cardiff, Oppose
+6, 60, Male, Belfast, Oppose
+7, 42, Female, Edinburgh, Support
+8, 33, Male, Bristol, Neutral
+9, 55, Female, Leeds, Support
+10, 29, Male, Newcastle, Oppose
+11, 41, Female, Liverpool, Support
+12, 31, Male, Oxford, Oppose
+13, 48, Male, Cambridge, Support
+14, 39, Female, Brighton, Oppose
+15, 52, Female, Southampton, Neutral
+16, 34, Male, Plymouth, Oppose
+17, 47, Female, Norwich, Support
+18, 30, Male, Sheffield, Oppose
+19, 57, Male, Aberdeen, Support
+20, 36, Female, Swansea, Oppose
+21, 59, Male, Cardiff, Support
+22, 40, Female, Belfast, Oppose
+23, 26, Female, Glasgow, Neutral
+24, 49, Male, London, Support
+25, 37, Male, Manchester, Oppose
+26, 53, Female, Birmingham, Neutral
+27, 43, Male, Edinburgh, Support
+28, 32, Female, Bristol, Oppose
+29, 56, Male, Leeds, Support
+30, 27, Female, Newcastle, Oppose
+31, 44, Female, Liverpool, Support
+32, 58, Male, Oxford, Oppose
+33, 46, Non-binary, Cambridge, Support
+34, 51, Female, Brighton, Oppose
+35, 61, Male, Southampton, Neutral
+36, 35, Male, Plymouth, Oppose
+37, 54, Female, Norwich, Support
+38, 29, Male, Sheffield, Oppose
+39, 48, Male, Aberdeen, Support
+40, 38, Female, Swansea, Oppose
+41, 60, Male, Cardiff, Support
+42, 39, Female, Belfast, Oppose
+43, 25, Female, Glasgow, Neutral
+44, 50, Male, London, Support
+45, 36, Male, Manchester, Oppose
+46, 52, Female, Birmingham, Neutral
+47, 43, Male, Edinburgh, Support
+48, 33, Female, Bristol, Oppose
+49, 57, Male, Leeds, Support
+50, 28, Female, Newcastle, Oppose
+51, 45, Female, Liverpool, Support
+52, 31, Male, Oxford, Oppose
+53, 49, Male, Cambridge, Support
+54, 40, Female, Brighton, Oppose
+55, 58, Male, Southampton, Neutral
+56, 36, Male, Plymouth, Oppose
+57, 53, Female, Norwich, Support
+58, 30, Male, Sheffield, Oppose
+59, 46, Male, Aberdeen, Support
+60, 37, Female, Swansea, Oppose
+61, 61, Male, Cardiff, Support
+62, 41, Female, Belfast, Oppose
+63, 27, Female, Glasgow, Neutral
+64, 51, Male, London, Support
+65, 35, Male, Manchester, Oppose
+66, 52, Female, Birmingham, Neutral
+67, 44, Male, Edinburgh, Support
+68, 34, Female, Bristol, Oppose
+69, 56, Male, Leeds, Support
+70, 29, Female, Newcastle, Oppose
+71, 46, Female, Liverpool, Support
+72, 32, Male, Oxford, Oppose
+73, 50, Male, Cambridge, Support
+74, 39, Female, Brighton, Oppose
+75, 59, Male, Southampton, Neutral
+76, 35, Male, Plymouth, Oppose
+77, 54, Female, Norwich, Support
+78, 31, Male, Sheffield, Oppose
+79, 47, Male, Aberdeen, Support
+80, 38, Female, Swansea, Oppose
+81, 60, Male, Cardiff, Support
+82, 38, Female, Belfast, Oppose
+83, 26, Female, Glasgow, Neutral
+84, 52, Male, London, Support
+85, 36, Male, Manchester, Oppose
+86, 53, Female, Birmingham, Neutral
+87, 43, Male, Edinburgh, Support
+88, 33, Female, Bristol, Oppose
+89, 57, Male, Leeds, Support
+90, 28, Female, Newcastle, Oppose
+91, 47, Female, Liverpool, Support
+92, 31, Male, Oxford, Oppose
+93, 49, Male, Cambridge, Support
+94, 40, Female, Brighton, Oppose
+95, 58, Male, Southampton, Neutral
+96, 37, Male, Plymouth, Oppose
+97, 54, Female, Norwich, Support
+98, 30, Male, Sheffield, Oppose
+99, 46, Male, Aberdeen, Support
+100, 39, Female, Swansea, Oppose
