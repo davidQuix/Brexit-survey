@@ -155,8 +155,7 @@ def before_shutdown():
 
     # set the flag to True to stop the loops as soon as possible.
     shutting_down = True
-
-print("Exiting.")
+    print("Exiting.")
 
 # Run the CSV processing in a thread
 while not shutting_down:
