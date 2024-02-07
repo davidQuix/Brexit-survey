@@ -152,7 +152,7 @@ while not shutting_down:
     processing_thread.start()
 
     # Wait for the thread to finish and then do it all again
-    # processing_thread.join()
+    processing_thread.join()
     
 
 # Run this method before shutting down.
