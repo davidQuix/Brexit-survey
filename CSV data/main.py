@@ -145,14 +145,7 @@ def process_csv_file(csv_file):
 
                 time.sleep(delay_seconds)
 
-
-# Run the CSV processing in a thread
-while not shutting_down:
-    processing_thread = threading.Thread(target=process_csv_file, args=("demo-data.csv",))
-    processing_thread.start()
-
-    # Wait for the thread to finish and then do it all again
-    processing_thread.join()
+    
 
 # Run this method before shutting down.
 # In this case we set a flag to tell the loops to exit gracefully.
@@ -162,6 +155,13 @@ def before_shutdown():
 
     # set the flag to True to stop the loops as soon as possible.
     shutting_down = True
+    print("Exiting.")
 
+# Run the CSV processing in a thread
+while not shutting_down:
+    processing_thread = threading.Thread(target=process_csv_file, args=("demo-data.csv",))
+    processing_thread.start()
 
-print("Exiting.")
+    # Wait for the thread to finish and then do it all again
+    processing_thread.join()
+    before_shutdown()
