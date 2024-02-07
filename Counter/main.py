@@ -11,14 +11,16 @@ output_topic = app.topic(os.environ["output"], value_serializer=JSONSerializer()
 sdf = app.dataframe(input_topic)
 
 def check_age_range(number):
-    if 0 <= number <= 10:
-        print("Number belongs to range 0-10")
-    elif 11 <= number <= 20:
-        print("Number belongs to range 11-20")
-    elif 21 <= number <= 30:
-        print("Number belongs to range 21-30")
+    if 0 <= number <= 12:
+        return "Children"
+    elif 13 <= number <= 17:
+         return "Teenager"
+    elif 18 <= number <= 34:
+        return "Young Adult"
+    elif 35 <= number <= 64:
+        return "Young Adult"
     else:
-        print("Number doesn't belong to any specified range")
+        return "Elderly"
 
 def count_names(row: dict, state: State):
 
@@ -39,7 +41,7 @@ def count_names(row: dict, state: State):
     # store the new count in state
     state.set(name, name_count)
 
-    check_age_range(name)
+    print(check_age_range(name))
 
     # return the updated row so more processing can be done on it
     return row
