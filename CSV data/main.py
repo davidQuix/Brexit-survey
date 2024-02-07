@@ -25,7 +25,7 @@ keep_timing = False
 # If the process is terminated on the command line or by the container
 # setting this flag to True will tell the loops to stop and the code
 # to exit gracefully.
-shutting_down = False
+shutting_down = True
 
 # counters for the status messages
 row_counter = 0
