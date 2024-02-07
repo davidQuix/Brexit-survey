@@ -11,6 +11,7 @@ output_topic = app.topic(os.environ["output"], value_serializer=JSONSerializer()
 sdf = app.dataframe(input_topic)
 
 def check_age_range(number):
+    print(number)
     if 0 <= number <= 12:
         return "Children"
     elif 13 <= number <= 17:
