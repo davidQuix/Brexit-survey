@@ -10,7 +10,7 @@ output_topic = app.topic(os.environ["output"], value_serializer=JSONSerializer()
 
 sdf = app.dataframe(input_topic)
 
-def check_age_range(number):
+def get_age_range(number):
     if 0 <= number <= 12:
         return "Children"
     elif 13 <= number <= 17:
@@ -20,26 +20,30 @@ def check_age_range(number):
     else:
         return "Elderly"
 
+def check_duplicities(number, state: State):
+     # check state, if the name is already there then retrieve the count
+    # default to 0 if the name wasn't in state
+    id_count = state.get(id)
+    print(id_count)
+
+     # add one to the name count
+    id_count = 1
+
+    # store the new count in state
+    state.set(id, id_count)
+
+    return id_count
+
 def count_names(row: dict, state: State):
 
     # get the value from the name column for this row
     # so we can see if it's in state
-    name = row["Age"]
-
-    # check state, if the name is already there then retrieve the count
-    # default to 0 if the name wasn't in state
-    name_count = state.get(name, 0)
-
-    # add one to the name count
-    name_count += 1
-
     # add the name count to the row data
-    row["count"] = name_count
+    row["count"] = check_duplicities(row["ID"], state)
 
-    # store the new count in state
-    state.set(name, name_count)
 
-    print(check_age_range(name))
+
+    row["Age range"] = get_age_range(row["Age"])
 
     # return the updated row so more processing can be done on it
     return row
