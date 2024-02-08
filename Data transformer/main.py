@@ -25,6 +25,9 @@ def count_names(row: dict, state: State):
     # return the updated row so more processing can be done on it
     return row_data
 
+#
+sdf = filter(lambda row: row['Valid'] == False, sdf)
+
 # apply the result of the count_names function to the row
 sdf = sdf.apply(count_names, stateful=True)
 
