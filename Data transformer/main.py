@@ -18,7 +18,7 @@ def count_names(row: dict, state: State):
     row_counter +=1 
     
     # Add valid on the row to check duplicities
-    new_state = functions.count_data(row["Vote"], state)
+    new_state = functions.count_data2(row["Vote"], state)
     
     row_data["Support"] = functions.calc_percentage(new_state.get("Support", 0), row_counter)
     row_data["Oppose"] = functions.calc_percentage(new_state.get("Oppose", 0), row_counter)
