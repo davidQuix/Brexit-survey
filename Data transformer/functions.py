@@ -11,4 +11,4 @@ def count_percentage(value, total_count, state: State):
     # store the new count in state
     state.set(value, value_count)
 
-    return value_count / total_count * 100
+    return state
