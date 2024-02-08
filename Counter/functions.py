@@ -27,7 +27,7 @@ def check_duplicities(id, state: State):
     else:
         return True
 
-def get_uk_contry(city):
+def get_uk_country(city):
     if city in england_cities:
         return "England"
     elif city in scotland_cities:
