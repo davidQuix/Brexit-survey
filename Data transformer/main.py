@@ -59,7 +59,7 @@ def transform_data(row: dict, state: State):
     return row_data
 
 def filter_data(row: dict, state: State):
-    return False
+    return True
 
 # Filter invalid votes
 sdf = sdf.filter(filter_data, stateful=True)
