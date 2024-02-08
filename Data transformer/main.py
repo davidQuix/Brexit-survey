@@ -1,12 +1,12 @@
 import os
 from quixstreams import Application, State
-from quixstreams.models.serializers.quix import JSONDeserializer, JSONSerializer, QuixEventsSerializer
+from quixstreams.models.serializers.quix import JSONDeserializer, JSONSerializer, QuixTimeseriesSerializer
 import functions
 
 app = Application.Quix("transformation-v1", auto_offset_reset="latest")
 
 input_topic = app.topic(os.environ["input"], value_deserializer=JSONDeserializer())
-output_topic = app.topic(os.environ["output"], value_serializer=QuixEventsSerializer())
+output_topic = app.topic(os.environ["output"], value_serializer=QuixTimeseriesSerializer())
 
 sdf = app.dataframe(input_topic)
 
