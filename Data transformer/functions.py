@@ -20,8 +20,6 @@ def count_data2(values, state: State):
             key += "_"
         key += val
 
-    print(key)
-
     # check state, if the name is already there then retrieve the count
     # default to 0 if the name wasn't in state
     value_count = state.get(key, 0)
