@@ -54,7 +54,7 @@ def transform_data(row: dict, state: State):
 
     # Store the tola of votes
     row_data["Total_votes"] = row_counter
-    row_data["Timestamp"] = row["Timestamp"]
+    # row_data["Timestamp"] = row["Timestamp"]
     return row_data
 
 # Filter invalid votes
