@@ -36,4 +36,6 @@ def count_data(values, state: State):
 
 
 def calc_percentage(value, total_count):
+    if total_count == 0:
+        return 0
     return value / total_count * 100
