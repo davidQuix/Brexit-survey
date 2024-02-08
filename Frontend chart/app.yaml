@@ -4,7 +4,7 @@ variables:
   - name: bearer_token
     inputType: FreeText
     description: ''
-    defaultValue: abc111
+    defaultValue: pat-884cd191640248ffa02ca08e9ca1a083
     required: false
   - name: chart_data_topic
     inputType: InputTopic
