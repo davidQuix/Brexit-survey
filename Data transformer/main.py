@@ -57,7 +57,7 @@ def count_names(row: dict, state: State):
     return row_data
 
 # Filter invalid votes
-sdf = sdf.filter(filter_invalids)
+sdf = sdf.filter(lambda row: row == {} or row["Valid"] == True)
 
 # apply the result of the count_names function to the row
 sdf = sdf.apply(count_names, stateful=True)
