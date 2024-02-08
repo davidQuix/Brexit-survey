@@ -1,15 +1,14 @@
 from quixstreams import State
-from uk_cities import england_cities, scotland_cities, wales_cities, ni_cities
 
-def count_duplicities(id, state: State):
+def count_percentage(value, total_count, state: State):
     # check state, if the name is already there then retrieve the count
     # default to 0 if the name wasn't in state
-    id_count = state.get(id, 0)
+    value_count = state.get(value, 0)
 
     # add one to the name count
-    id_count += 1
+    value_count += 1
 
     # store the new count in state
-    state.set(id, id_count)
+    state.set(value, value_count)
 
-    return id_count
+    return value_count / total_count * 100
