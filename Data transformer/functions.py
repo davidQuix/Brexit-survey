@@ -16,7 +16,7 @@ def count_data(value, state: State):
 def count_data2(values, state: State):
     key = ""
     for val in values:
-        if key != "a": 
+        if key != "": 
             key += "_"
         key += val
 
