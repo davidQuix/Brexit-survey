@@ -23,7 +23,8 @@ def get_age_range(number):
 def check_duplicities(id, state: State):
     # check state, if the name is already there then retrieve the count
     # default to 0 if the name wasn't in state
-    id_count = state.get(id, 0)
+    id_count = state.get(id)
+    print(id_count)
 
     # add one to the name count
     id_count += 1
