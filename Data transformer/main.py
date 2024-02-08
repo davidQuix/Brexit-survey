@@ -13,14 +13,17 @@ sdf = app.dataframe(input_topic)
 # counters for the status messages
 row_counter = 0
 
+# Transformer to chart data
 def transform_data(row: dict, state: State):
     global row_counter
     row_data = {}
 
+    # If no data (end) return row and reset row counter
     if row == {}:
         row_counter = 0
         return row
 
+    # Increate row counter
     row_counter +=1 
     
     # Add valid on the row to check duplicities
