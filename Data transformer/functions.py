@@ -21,7 +21,6 @@ def count_data(values, state: State):
     # check state, if the name is already there then retrieve the count
     # default to 0 if the name wasn't in state
     value_count = state.get(key, 0)
-    print(value_count)
 
     # add one to the name count
     value_count += 1
@@ -29,7 +28,7 @@ def count_data(values, state: State):
     # store the new count in state
     state.set(key, value_count)
 
-    set_key(key, State)
+    # set_key(key, State)
 
 def calc_percentage(value, total_count):
     return value / total_count * 100
