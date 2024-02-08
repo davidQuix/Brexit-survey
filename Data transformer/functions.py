@@ -16,8 +16,6 @@ def set_key(key, state: State):
     arr = state.get("keys", 0)
     print(arr)
 
-    add_if_not_exists([], key)
-
 def count_data(values, state: State):
     key = get_key(values)
     
