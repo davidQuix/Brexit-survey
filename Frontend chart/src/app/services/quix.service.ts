@@ -29,9 +29,9 @@ export class QuixService {
   /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
   /*WORKING LOCALLY? UPDATE THESE!*/
   private workingLocally = false; // set to true if working locally
-  private token: string = 'pat-884cd191640248ffa02ca08e9ca1a083'; // Create a token in the Tokens menu and paste it here
-  public workspaceId: string = 'david-brexitsurvey-develop'; // Look in the URL for the Quix Portal your workspace ID is after 'workspace='
-  public chartDataTopic: string = 'chart-data'; // get topic name from the Topics page in the Quix portal
+  private token: string = ''; // Create a token in the Tokens menu and paste it here
+  public workspaceId: string = ''; // Look in the URL for the Quix Portal your workspace ID is after 'workspace='
+  public chartDataTopic: string = ''; // get topic name from the Topics page in the Quix portal
 
   /* optional */
   /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
