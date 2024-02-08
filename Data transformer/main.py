@@ -58,7 +58,7 @@ def transform_data(row: dict, state: State):
 
     return row_data
 
-sdf = sdf.update(lambda row: print(row))
+sdf = sdf.update(lambda row: print(row), stateful=True)
 
 # Filter invalid votes
 # sdf = sdf.filter(lambda row: row == {} or row["Valid"] != False)
