@@ -9,9 +9,6 @@ input_topic = app.topic(os.environ["input"], value_deserializer=JSONDeserializer
 output_topic = app.topic(os.environ["output"], value_serializer=JSONSerializer())
 
 sdf = app.dataframe(input_topic)
-print('hellloooooooooo')
-print(sdf)
-
 
 def count_names(row: dict, state: State):
     # Add valid on the row to check duplicities
