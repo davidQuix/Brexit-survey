@@ -1,4 +1,4 @@
-name: Printers Dashboard
+name: Frontend chart
 language: nodejs
 variables:
   - name: bearer_token
