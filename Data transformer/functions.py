@@ -32,7 +32,7 @@ def count_data(values, state: State):
     # store the new count in state
     state.set(key, value_count)
 
-    set_key(key, State)
+    # set_key(key, State)
 
 def calc_percentage(value, total_count):
     return value / total_count * 100
