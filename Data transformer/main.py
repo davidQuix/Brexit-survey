@@ -31,6 +31,7 @@ def transform_data(row: dict, state: State):
     functions.count_data([row["Vote"], row["Gender"]], state)
     functions.count_data([row["Vote"], row["Age_range"]], state)
 
+    # The chart data that we want to set on the row
     values = [ 
         { "key": "Support", "total": row_counter }, 
         { "key": "Oppose", "total": row_counter },
@@ -47,12 +48,13 @@ def transform_data(row: dict, state: State):
         { "key": "Oppose_Elderly", "total": state.get("Oppose", 0) }, 
     ]
 
+    # Update row with the chart data defined above
     for val in values:
         row_data[val["key"]] = functions.calc_percentage(state.get(val["key"], 0), val["total"])   
 
+    # Store the tola of votes
     row_data["Total_votes"] = row_counter
 
-    # return the updated row so more processing can be done on it
     return row_data
 
 # Filter invalid votes
