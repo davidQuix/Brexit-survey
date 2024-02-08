@@ -9,7 +9,7 @@ deployments:
   - name: CSV data
     application: CSV data
     deploymentType: Service
-    version: ce457ec00647db9adf7d1b040ea424c6da2dfab3
+    version: 247a3ebac11a68821fb1363230cd0dbf486ee1a9
     resources:
       cpu: 200
       memory: 500
@@ -44,7 +44,7 @@ deployments:
   - name: Data transformer
     application: Data transformer
     deploymentType: Service
-    version: 560d82b026e5eb3da8808f7fb186651e6aa23aec
+    version: e685de6c03fb3da75ae0c4d45b554b52b7c12455
     resources:
       cpu: 200
       memory: 500
