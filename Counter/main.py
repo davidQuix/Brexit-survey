@@ -15,7 +15,7 @@ def add_data(row: dict, state: State):
     if row == {}:
         return row
 
-    # Add valid on the row to check duplicities
+    # Add Valid on the row to check duplicities
     row["Valid"] = functions.check_duplicities(row["ID"], state)
 
     # Add Age_range on the row
