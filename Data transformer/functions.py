@@ -8,7 +8,7 @@ def get_key(values):
         key += val
     return key
 
-def count_data2(values, state: State):
+def count_data2(values):
     key = get_key(values)
     
     # check state, if the name is already there then retrieve the count
