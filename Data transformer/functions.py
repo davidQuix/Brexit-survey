@@ -8,6 +8,10 @@ def get_key(values):
         key += val
     return key
 
+def add_if_not_exists(arr, string_to_add):
+    if string_to_add not in arr:
+        arr.append(string_to_add)
+
 def count_data(values, state: State):
     key = get_key(values)
     
@@ -19,9 +23,7 @@ def count_data(values, state: State):
     value_count += 1
 
     # store the new count in state
-    state.set(key, value_count)
-
-    return state
+    state.set(key, key)
 
 def calc_percentage(value, total_count):
     return value / total_count * 100
