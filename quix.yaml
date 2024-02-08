@@ -41,6 +41,26 @@ deployments:
         description: This is the output topic to write data to
         required: true
         value: new-data
+  - name: Data transformer
+    application: Data transformer
+    deploymentType: Service
+    version: 560d82b026e5eb3da8808f7fb186651e6aa23aec
+    resources:
+      cpu: 200
+      memory: 500
+      replicas: 1
+    desiredStatus: Running
+    variables:
+      - name: input
+        inputType: InputTopic
+        description: This is the input topic to read data from
+        required: true
+        value: new-data
+      - name: output
+        inputType: OutputTopic
+        description: This is the output topic to write data to
+        required: true
+        value: chart-data
 
 # This section describes the Topics of the data pipeline
 topics:
