@@ -16,8 +16,9 @@ def count_names(row: dict, state: State):
     # add the name count to the row data
     row["valid"] = functions.check_duplicities(row["ID"], state)
 
+    row["Age_range"] = functions.get_age_range(row["Age"])
 
-    row["Age range"] = functions.get_age_range(row["Age"])
+    row["UK_contry"] = functions.get_age_range(row["Age"])
 
     # return the updated row so more processing can be done on it
     return row
