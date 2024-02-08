@@ -12,6 +12,8 @@ sdf = app.dataframe(input_topic)
 
 # counters for the status messages
 row_counter = 0
+
+
 def count_names(row: dict, state: State):
     global row_counter
     row_data = {}
@@ -50,9 +52,6 @@ def count_names(row: dict, state: State):
 
     # return the updated row so more processing can be done on it
     return row_data
-
-def filter_invalids(row: dict):
-    return  row == {} or row["Valid"] == True
 
 # Filter invalid votes
 sdf = sdf.filter(filter_invalids)
