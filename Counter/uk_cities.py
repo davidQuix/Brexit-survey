@@ -21,7 +21,9 @@ england_cities = [
     "Reading",
     "Brighton",
     "Southampton",
-    "Portsmouth"
+    "Portsmouth",
+    "Plymouth",
+    "Norwich"
 ]
 
 # Scotland cities
