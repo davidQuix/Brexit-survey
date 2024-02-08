@@ -12,7 +12,7 @@ sdf = app.dataframe(input_topic)
 
 def count_names(row: dict, state: State):
     # Add valid on the row to check duplicities
-    row["valid"] = functions.check_duplicities(row["ID"], state)
+    row["Valid"] = functions.check_duplicities(row["ID"], state)
    
     # Add Age_range on the row
     row["Age_range"] = functions.get_age_range(row["Age"])
