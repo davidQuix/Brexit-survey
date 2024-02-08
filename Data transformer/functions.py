@@ -8,7 +8,7 @@ def get_key(values):
         key += val
     return key
 
-def count_data2(values, state: State):
+def count_data(values, state: State):
     key = get_key(values)
     
     # check state, if the name is already there then retrieve the count
@@ -20,8 +20,6 @@ def count_data2(values, state: State):
 
     # store the new count in state
     state.set(key, value_count)
-
-    return state
 
 def calc_percentage(value, total_count):
     return value / total_count * 100
