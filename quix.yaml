@@ -24,7 +24,7 @@ deployments:
   - name: Data analysis
     application: Counter
     deploymentType: Service
-    version: 542f07256c62ce077dcb38f8791aa7add6e5b988
+    version: 7aefb98f5c6ef20a1e6fcce9d4cce29219e1d243
     resources:
       cpu: 200
       memory: 500
