@@ -67,7 +67,7 @@ sdf = sdf.update(lambda row: print(row))
 sdf = sdf.apply(transform_data, stateful=True)
 
 # print the row with this inline function
-# sdf = sdf.update(lambda row: print(row))
+sdf = sdf.update(lambda row: print(row))
 
 # publish the updated row to the output topic
 sdf = sdf.to_topic(output_topic)
