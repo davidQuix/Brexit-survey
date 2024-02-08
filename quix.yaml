@@ -61,6 +61,29 @@ deployments:
         description: This is the output topic to write data to
         required: true
         value: chart-data
+  - name: Frontend chart
+    application: Frontend chart
+    deploymentType: Service
+    version: 7c55c737f8db324c363b9bd9668f100432470c42
+    resources:
+      cpu: 200
+      memory: 500
+      replicas: 1
+    publicAccess:
+      enabled: true
+      urlPrefix: frontendchart-7c55c73
+    desiredStatus: Running
+    variables:
+      - name: bearer_token
+        inputType: FreeText
+        description: ''
+        required: false
+        value: abc111
+      - name: chart_data_topic
+        inputType: InputTopic
+        description: ''
+        required: true
+        value: chart-data
 
 # This section describes the Topics of the data pipeline
 topics:
