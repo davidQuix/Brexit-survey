@@ -32,7 +32,7 @@ def count_names(row: dict, state: State):
         { "key": "Neutral", "total": row_counter },
         { "key": "Support_Female", "total": state.get("Support", 0) }, 
         { "key": "Support_Male", "total": state.get("Support", 0) },   
-        { "key": "Oppose_Female", "total": state.get("Oppose", 0) },  
+        { "key": "Oppose_Female", "total": state.get("Oppose", 1) },  
         # { "key": "Oppose_Male", "total": state.get("Oppose", 0) }
     ]
 
