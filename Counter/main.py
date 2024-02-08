@@ -23,7 +23,6 @@ def get_age_range(number):
 def check_duplicities(id, state: State):
     # check state, if the name is already there then retrieve the count
     # default to 0 if the name wasn't in state
-    print(state.get(id))
     id_count = state.get(id, 0)
 
     # add one to the name count
@@ -32,7 +31,10 @@ def check_duplicities(id, state: State):
     # store the new count in state
     state.set(id, id_count)
 
-    return id_count
+    if id_count > 1
+        return False
+    else 
+        return True
 
 def count_names(row: dict, state: State):
 
