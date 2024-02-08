@@ -1,6 +1,7 @@
 import os
 from quixstreams import Application, State
 from quixstreams.models.serializers.quix import JSONDeserializer, JSONSerializer, QuixEventsSerializer
+import functions
 
 app = Application.Quix("transformation-v1", auto_offset_reset="latest")
 
