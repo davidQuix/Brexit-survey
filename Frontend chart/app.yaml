@@ -9,7 +9,7 @@ variables:
   - name: chart_data_topic
     inputType: InputTopic
     description: ''
-    defaultValue: chart_data
+    defaultValue: chart-data
     required: true
 dockerfile: src/build/dockerfile
 defaultFile: src/app/services/quix.service.ts
