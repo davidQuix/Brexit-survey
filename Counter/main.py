@@ -1,7 +1,7 @@
 import os
 from quixstreams import Application, State
 from quixstreams.models.serializers.quix import JSONDeserializer, JSONSerializer
-from get_age_range import Functions
+from functions import Functions
 
 
 app = Application.Quix("transformation-v1", auto_offset_reset="latest")
