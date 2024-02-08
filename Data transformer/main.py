@@ -15,15 +15,16 @@ row_counter = 0
 def count_names(row: dict, state: State):
     global row_counter
     row_data = {}
-
+    row_counter +=1 
+    
     # Add valid on the row to check duplicities
     new_state = functions.count_data(row["Vote"], state)
     
-    row_data["Support"] = functions.calc_percentage(new_state.get("Support"), row_counter)
-    print(new_state.get("Support"))
-    
-    # print(new_state.get("Oppose"))
-    # print(new_state.get("Neutral"))
+    row_data["Support"] = functions.calc_percentage(new_state.get("Support", 0), row_counter)
+    row_data["Oppose"] = functions.calc_percentage(new_state.get("Oppose", 0), row_counter)
+    row_data["Neutral"] = functions.calc_percentage(new_state.get("Neutral", 0), row_counter)
+
+    row_data["Total_votes"] = row_counter
 
     # return the updated row so more processing can be done on it
     return row_data
