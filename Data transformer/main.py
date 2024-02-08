@@ -38,6 +38,9 @@ def count_names(row: dict, state: State):
         { "key": "Support_Young Adult", "total": state.get("Support", 0) },
         { "key": "Support_Adult", "total": state.get("Support", 0) }, 
         { "key": "Support_Elderly", "total": state.get("Support", 0) }, 
+        { "key": "Oppose_Young Adult", "total": state.get("Oppose", 0) },
+        { "key": "Oppose_Adult", "total": state.get("Oppose", 0) }, 
+        { "key": "Oppose_Elderly", "total": state.get("Oppose", 0) }, 
     ]
 
     for val in values:
