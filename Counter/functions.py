@@ -1,4 +1,4 @@
-class functions:
+class Functions:
 
     def get_age_range(number):
         if 0 <= number <= 12:
