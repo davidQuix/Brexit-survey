@@ -21,7 +21,13 @@ def count_names(row: dict, state: State):
     functions.count_data([row["Vote"]], state)
     functions.count_data([row["Vote"], row["Gender"]], state)
     
-    values = [ { "key": "Support", "total": row_counter } ]
+    values = [ 
+        { "key": "Support", "total": row_counter }, 
+        { "key": "Oppose", "total": row_counter },
+        { "key": "Neutral", "total": row_counter },
+        { "key": "Support_Female", "total": state.get("Support", 0) }, 
+    ]
+
     for val in values:
         row_data[val["key"]] = functions.calc_percentage(state.get(val["key"], 0), val["total"])   
 
