@@ -18,7 +18,7 @@ def count_names(row: dict, state: State):
 
     row["Age_range"] = functions.get_age_range(row["Age"])
 
-    row["UK_contry"] = functions.get_age_range(row["Age"])
+    row["UK_contry"] = functions.get_age_range(row["Location"])
 
     # return the updated row so more processing can be done on it
     return row
