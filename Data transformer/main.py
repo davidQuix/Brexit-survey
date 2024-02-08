@@ -15,7 +15,8 @@ row_counter = 0
 def count_names(row: dict, state: State):
     global row_counter
     row_data = {}
-
+    row_counter +=1 
+    
     # Add valid on the row to check duplicities
     new_state = functions.count_data(row["Vote"], state)
     
