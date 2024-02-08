@@ -18,6 +18,7 @@ def count_names(row: dict, state: State):
 
     if row == {}:
         row_counter = 0
+        return row
 
     row_counter +=1 
     
