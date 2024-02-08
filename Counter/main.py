@@ -1,8 +1,7 @@
 import os
 from quixstreams import Application, State
 from quixstreams.models.serializers.quix import JSONDeserializer, JSONSerializer
-from functions import Functions
-
+import functions
 
 app = Application.Quix("transformation-v1", auto_offset_reset="latest")
 
@@ -38,9 +37,6 @@ def check_duplicities(id, state: State):
         return True
 
 def count_names(row: dict, state: State):
-
-    functions = Functions()
-
     # get the value from the name column for this row
     # so we can see if it's in state
     # add the name count to the row data
