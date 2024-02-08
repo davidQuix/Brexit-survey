@@ -63,7 +63,7 @@ def filter_data(row: dict):
     return True
 
 # Filter invalid votes
-sdf = sdf.filter(filter_data, stateful=True)
+# sdf = sdf.filter(filter_data, stateful=True)
 
 # Trasform data to char values
 sdf = sdf.apply(transform_data, stateful=True)
