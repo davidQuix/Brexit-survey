@@ -25,6 +25,7 @@ def count_names(row: dict, state: State):
 
 # apply the result of the count_names function to the row
 sdf = sdf.apply(count_names, stateful=True)
+print(sdf)
 
 # print the row with this inline function
 sdf = sdf.update(lambda row: print(row))
