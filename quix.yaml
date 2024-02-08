@@ -9,7 +9,7 @@ deployments:
   - name: CSV data
     application: CSV data
     deploymentType: Service
-    version: ce457ec00647db9adf7d1b040ea424c6da2dfab3
+    version: 572e0b01f9a799cda9871542f71fceb188d82dc6
     resources:
       cpu: 200
       memory: 500
