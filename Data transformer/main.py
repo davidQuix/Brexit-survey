@@ -25,7 +25,8 @@ def count_names(row: dict, state: State):
     # Add valid on the row to check duplicities
     functions.count_data([row["Vote"]], state)
     functions.count_data([row["Vote"], row["Gender"]], state)
-    
+    functions.count_data([row["Vote"], row["Age_range"]], state)
+
     values = [ 
         { "key": "Support", "total": row_counter }, 
         { "key": "Oppose", "total": row_counter },
@@ -33,7 +34,10 @@ def count_names(row: dict, state: State):
         { "key": "Support_Female", "total": state.get("Support", 0) }, 
         { "key": "Support_Male", "total": state.get("Support", 0) },   
         { "key": "Oppose_Female", "total": state.get("Oppose", 0) },  
-        { "key": "Oppose_Male", "total": state.get("Oppose", 0) }
+        { "key": "Oppose_Male", "total": state.get("Oppose", 0) },
+        { "key": "Support_Young Adult", "total": state.get("Support", 0) },
+        { "key": "Support_Adult", "total": state.get("Support", 0) }, 
+        { "key": "Support_Elderly", "total": state.get("Support", 0) }, 
     ]
 
     for val in values:
