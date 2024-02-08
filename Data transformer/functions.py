@@ -13,12 +13,14 @@ def add_if_not_exists(arr, key):
         arr.append(key)
 
 def set_key(key, state: State):
-    arr = state.get("keys", [])
+    empty_array = []
+
+    arr = state.get("keys", empty_array)
     print(arr)
 
-    add_if_not_exists([], key)
+    add_if_not_exists(empty_array, key)
 
-    state.set("keys", [])
+    state.set("keys", empty_array)
 
 def count_data(values, state: State):
     key = get_key(values)
