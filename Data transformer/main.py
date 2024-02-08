@@ -59,11 +59,10 @@ def transform_data(row: dict, state: State):
     return row_data
 
 def filter_data(row: dict):
-    # print(row)
     return True
 
 # Filter invalid votes
-# sdf = sdf.filter(filter_data, stateful=True)
+sdf = sdf.filter(filter_data, stateful=True)
 
 # Trasform data to char values
 sdf = sdf.apply(transform_data, stateful=True)
