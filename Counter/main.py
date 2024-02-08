@@ -31,9 +31,9 @@ def check_duplicities(id, state: State):
     # store the new count in state
     state.set(id, id_count)
 
-    if id_count > 1
+    if id_count > 1:
         return False
-    else 
+    else:
         return True
 
 def count_names(row: dict, state: State):
@@ -41,8 +41,7 @@ def count_names(row: dict, state: State):
     # get the value from the name column for this row
     # so we can see if it's in state
     # add the name count to the row data
-    row["count"] = check_duplicities(row["ID"], state)
-
+    row["valid"] = check_duplicities(row["ID"], state)
 
 
     row["Age range"] = get_age_range(row["Age"])
