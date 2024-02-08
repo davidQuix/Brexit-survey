@@ -36,5 +36,7 @@ def get_age_range(number):
         return "Teenager"
     elif 18 <= number <= 34:
         return "Young Adult"
+    elif 35 <= number <= 65:
+        return "Adult"
     else:
         return "Elderly"
