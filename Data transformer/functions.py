@@ -14,6 +14,7 @@ def add_if_not_exists(arr, key):
 
 def set_key(key, state: State):
     arr = state.get(key, 0)
+    print(arr)
 
 def count_data(values, state: State):
     key = get_key(values)
@@ -29,7 +30,7 @@ def count_data(values, state: State):
     # store the new count in state
     state.set(key, value_count)
 
-    # set_key(key, State)
+    set_key(key, State)
 
 def calc_percentage(value, total_count):
     return value / total_count * 100
