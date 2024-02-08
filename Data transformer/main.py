@@ -59,8 +59,7 @@ def transform_data(row: dict, state: State):
     return row_data
 
 def filter_data(row: dict, state: State):
-    print(row)
-    # return row == {} or row["Valid"]
+    return row == {} or row["Valid"]
     return True
 
 # Filter invalid votes
