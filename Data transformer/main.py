@@ -60,7 +60,8 @@ def transform_data(row: dict, state: State):
 
 def filter_data(row: dict, state: State):
     print(row)
-    return row == {} or row["Valid"]
+    # return row == {} or row["Valid"]
+    return True
 
 # Filter invalid votes
 sdf = sdf.filter(filter_data, stateful=True)
