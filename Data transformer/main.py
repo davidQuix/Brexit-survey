@@ -17,7 +17,7 @@ def count_names(row: dict, state: State):
     row_data = {}
 
     # Add valid on the row to check duplicities
-    row_data["Valid"] = functions.count_duplicities(row["ID"], state)
+    row_data["Valid"] = functions.count_duplicities(row["Vote"], state)
 
     # 
     row_counter += 1
