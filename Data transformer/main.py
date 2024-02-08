@@ -64,7 +64,6 @@ def filter_data(row: dict, state: State):
 
 # Filter invalid votes
 # sdf = sdf.filter(filter_data, stateful=True)
-print(sdf.stream.tree())
 
 # Trasform data to char values
 sdf = sdf.apply(transform_data, stateful=True)
