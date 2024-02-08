@@ -20,11 +20,13 @@ def count_names(row: dict, state: State):
     # Add UK_country on the row
     row["UK_country"] = functions.get_uk_country(row["Location"])
 
+    print(row)
+
     # return the updated row so more processing can be done on it
     return row
 
 # apply the result of the count_names function to the row
-sdf = count_names
+sdf = sdf.apply(count_names, stateful=True)
 
 # print the row with this inline function
 sdf = sdf.update(lambda row: print(row))
