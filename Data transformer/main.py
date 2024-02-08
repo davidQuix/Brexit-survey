@@ -1,12 +1,12 @@
 import os
 from quixstreams import Application, State
-from quixstreams.models.serializers.quix import JSONDeserializer, JSONSerializer
+from quixstreams.models.serializers.quix import JSONDeserializer, JSONSerializer, QuixSerializer
 import functions
 
 app = Application.Quix("transformation-v1", auto_offset_reset="latest")
 
 input_topic = app.topic(os.environ["input"], value_deserializer=JSONDeserializer())
-output_topic = app.topic(os.environ["output"], value_serializer=JSONDeserializer())
+output_topic = app.topic(os.environ["output"], value_serializer=QuixSerializer())
 
 sdf = app.dataframe(input_topic)
 
@@ -54,7 +54,8 @@ def transform_data(row: dict, state: State):
 
     # Store the tola of votes
     row_data["Total_votes"] = row_counter
-    # row_data["Timestamp"] = row["Timestamp"]
+    row_data["Timestamp"] = row["Timestamp"]
+
     return row_data
 
 # Filter invalid votes
