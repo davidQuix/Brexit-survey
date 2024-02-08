@@ -20,8 +20,6 @@ def set_key(key, state: State):
 
     add_if_not_exists(empty_array, key)
 
-    state.set("keys", empty_array)
-
 def count_data(values, state: State):
     key = get_key(values)
     
