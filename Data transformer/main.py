@@ -25,8 +25,11 @@ def count_names(row: dict, state: State):
     # return the updated row so more processing can be done on it
     return row_data
 
+def filter_invalids(row: dict):
+    return row['Valid'] == True
+
 #
-sdf = sdf.filter(lambda row: row['Valid'] == False, stateful=True)
+sdf = sdf.filter(filter_invalids)
 
 # apply the result of the count_names function to the row
 sdf = sdf.apply(count_names, stateful=True)
