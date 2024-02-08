@@ -26,6 +26,7 @@ def count_names(row: dict, state: State):
     return row_data
 
 def filter_invalids(row: dict):
+    print(row)
     return row['Valid'] == True
 
 #
