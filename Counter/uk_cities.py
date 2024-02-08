@@ -1,5 +1,3 @@
-# uk_cities.py
-
 # England cities
 england_cities = [
     "London",
