@@ -64,7 +64,7 @@ deployments:
   - name: Frontend chart
     application: Frontend chart
     deploymentType: Service
-    version: 3b10220d1e705241612d658bda3f829e2735bbea
+    version: 95d4b5ad32a6029cf8af3a2076596e4f3ef17905
     resources:
       cpu: 200
       memory: 500
@@ -75,10 +75,10 @@ deployments:
     desiredStatus: Running
     variables:
       - name: bearer_token
-        inputType: FreeText
+        inputType: Secret
         description: ''
         required: false
-        value: abc111
+        secretKey: dashboard_bearer_token
       - name: chart_data_topic
         inputType: InputTopic
         description: ''
