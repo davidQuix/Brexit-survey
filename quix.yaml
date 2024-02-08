@@ -21,21 +21,6 @@ deployments:
         description: Name of the output topic to write into
         required: true
         value: csv-data
-  - name: CSV data 2
-    application: CSV data
-    deploymentType: Service
-    version: 18792cd5d70c17224628c1f334bc5e22e3ffb7a5
-    resources:
-      cpu: 200
-      memory: 500
-      replicas: 1
-    desiredStatus: Running
-    variables:
-      - name: output
-        inputType: OutputTopic
-        description: Name of the output topic to write into
-        required: true
-        value: csv-data
 
 # This section describes the Topics of the data pipeline
 topics:
