@@ -32,5 +32,7 @@ def count_data(values, state: State):
 
     set_key(key, state)
 
+    print(state.get("keys"))
+
 def calc_percentage(value, total_count):
     return value / total_count * 100
