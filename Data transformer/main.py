@@ -20,6 +20,8 @@ def count_names(row: dict, state: State):
     new_state = functions.count_percentage(row["Vote"], row_counter, state)
 
     print(new_state.get("Support"))
+    print(new_state.get("Oppose"))
+    print(new_state.get("Neutral"))
 
     # 
     row_counter += 1
