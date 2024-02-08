@@ -28,8 +28,7 @@ def count_names(row: dict, state: State):
     return row_data
 
 def filter_invalids(row: dict):
-    print (row["valid"])
-    return row["valid"] == True
+    return row["Valid"] == True
 
 # Filter invalid votes
 sdf = sdf.filter(filter_invalids)
