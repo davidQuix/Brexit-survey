@@ -1,12 +1,16 @@
 from quixstreams import State
 
-def count_data2(values, state: State):
+def get_key(values):
     key = ""
     for val in values:
         if key != "": 
             key += "_"
         key += val
+    return key
 
+def count_data2(values, state: State):
+    key = get_key(values)
+    
     # check state, if the name is already there then retrieve the count
     # default to 0 if the name wasn't in state
     value_count = state.get(key, 0)
