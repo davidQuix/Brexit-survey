@@ -9,7 +9,7 @@ variables:
   - name: output
     inputType: OutputTopic
     description: This is the output topic to write data to
-    defaultValue: new-data
+    defaultValue: chart-data
     required: true
 dockerfile: dockerfile
 runEntryPoint: main.py
