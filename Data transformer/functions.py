@@ -8,10 +8,6 @@ def get_key(values):
         key += val
     return key
 
-def add_if_not_exists(arr, string_to_add):
-    if string_to_add not in arr:
-        arr.append(string_to_add)
-
 def count_data(values, state: State):
     key = get_key(values)
     
