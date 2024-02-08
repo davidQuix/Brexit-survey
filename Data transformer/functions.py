@@ -1,6 +1,6 @@
 from quixstreams import State
 
-def count_percentage(value, total_count, state: State):
+def count_data(value, state: State):
     # check state, if the name is already there then retrieve the count
     # default to 0 if the name wasn't in state
     value_count = state.get(value, 0)
@@ -12,3 +12,6 @@ def count_percentage(value, total_count, state: State):
     state.set(value, value_count)
 
     return state
+
+def get_percentage(value, total_count):
+    return value * total_count / 100
