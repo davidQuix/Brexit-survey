@@ -21,6 +21,26 @@ deployments:
         description: Name of the output topic to write into
         required: true
         value: csv-data
+  - name: Data analysis
+    application: Counter
+    deploymentType: Service
+    version: 542f07256c62ce077dcb38f8791aa7add6e5b988
+    resources:
+      cpu: 200
+      memory: 500
+      replicas: 1
+    desiredStatus: Running
+    variables:
+      - name: input
+        inputType: InputTopic
+        description: This is the input topic to read data from
+        required: true
+        value: csv-data
+      - name: output
+        inputType: OutputTopic
+        description: This is the output topic to write data to
+        required: true
+        value: new-data
 
 # This section describes the Topics of the data pipeline
 topics:
