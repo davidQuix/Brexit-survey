@@ -38,7 +38,7 @@ def count_names(row: dict, state: State):
     # get the value from the name column for this row
     # so we can see if it's in state
     # add the name count to the row data
-    # row["count"] = check_duplicities(row["ID"], state)
+    row["count"] = check_duplicities(row["ID"], state)
 
 
 
