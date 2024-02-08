@@ -8,7 +8,7 @@ Index,ID,Name,Age,Gender,Location,Vote
 7,G789012345,Sarah Taylor,42,Female,Edinburgh,Support
 8,H890123456,Christopher Clark,33,Male,Bristol,Neutral
 9,I901234567,Amanda Martinez,55,Female,Leeds,Support
-10,DA567890123,Emma Davis,38,Female,Cardiff,Oppose
+10,E567890123,Emma Davis,38,Female,Cardiff,Oppose
 11,K123456789,Olivia White,41,Female,Liverpool,Support
 12,L234567890,William Harris,31,Male,Oxford,Oppose
 13,M345678901,Sophia Lee,48,Male,Cambridge,Support
@@ -31,7 +31,7 @@ Index,ID,Name,Age,Gender,Location,Vote
 30,AD012345678,David Hall,27,Female,Newcastle,Oppose
 31,AE123456789,Charlotte Mitchell,44,Female,Liverpool,Support
 32,AF234567890,Mason Perez,58,Male,Oxford,Oppose
-33,CZ456789012,Emily Brown,50,Male,Birmingham,Support
+33,D456789012,Emily Brown,50,Male,Birmingham,Support
 34,AH456789012,Liam Price,51,Female,Brighton,Oppose
 35,AI567890123,Ella Green,61,Male,Southampton,Neutral
 36,AJ678901234,Oscar Baker,35,Male,Plymouth,Oppose
@@ -60,7 +60,7 @@ Index,ID,Name,Age,Gender,Location,Vote
 59,BG901234567,Isaac Price,46,Male,Aberdeen,Support
 60,BH012345678,Sophia Russell,37,Female,Swansea,Oppose
 61,BI123456789,Adam Bailey,60,Male,Cardiff,Support
-62,CY345678901,Alex Johnson,28,Non-binary,Glasgow,Neutral
+62,C345678901,Alex Johnson,28,Non-binary,Glasgow,Neutral
 63,BK345678901,Lucas Stewart,26,Female,Glasgow,Neutral
 64,BL456789012,Grace Butler,52,Male,London,Support
 65,BM567890123,Owen Morgan,36,Male,Manchester,Oppose
@@ -77,12 +77,12 @@ Index,ID,Name,Age,Gender,Location,Vote
 76,BX678901234,Isabel Jones,35,Male,Plymouth,Oppose
 77,BY789012345,Liam Murphy,54,Female,Norwich,Support
 78,BZ890123456,Ella Foster,31,Male,Sheffield,Oppose
-79,CX234567890,Jane Smith,45,Female,Manchester,Oppose
+79,B234567890,Jane Smith,45,Female,Manchester,Oppose
 80,CB012345678,Owen Bailey,38,Female,Swansea,Oppose
 81,CC123456789,Isabella Foster,60,Male,Cardiff,Support
 82,CD234567890,Samuel Hughes,38,Female,Belfast,Oppose
 83,CE345678901,Henry Hughes,26,Female,Glasgow,Neutral
-84,CW123456789,John Doe,35,Male,London,Support
+84,A123456789,John Doe,35,Male,London,Support
 85,CG567890123,Lucas Smith,36,Male,Manchester,Oppose
 86,CH678901234,Olivia Wilson,43,Female,Birmingham,Neutral
 87,CI789012345,Ethan Wright,47,Male,Edinburgh,Support
