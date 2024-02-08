@@ -144,6 +144,9 @@ def process_csv_file(csv_file):
                     delay_seconds = 0
 
                 time.sleep(delay_seconds)
+    
+    # Send empty row at the end
+    publish_row(stream_id, {})
 
     
 
