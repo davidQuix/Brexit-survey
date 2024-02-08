@@ -164,4 +164,4 @@ while not shutting_down:
 
     # Wait for the thread to finish and then do it all again
     processing_thread.join()
-    before_shutdown()
+    # before_shutdown()
