@@ -21,7 +21,7 @@ def count_names(row: dict, state: State):
     new_state = functions.count_data(row["Vote"], state)
     
     row_data["Support"] = functions.calc_percentage(new_state.get("Support"), row_counter)
-    # row_data["Oppose"] = functions.calc_percentage(new_state.get("Oppose"), row_counter)
+    row_data["Oppose"] = functions.calc_percentage(new_state.get("Oppose"), row_counter)
     # row_data["Neutral"] = functions.calc_percentage(new_state.get("Neutral"), row_counter)
 
     # row_data["Total_votes"] = row_counter
