@@ -10,16 +10,6 @@ output_topic = app.topic(os.environ["output"], value_serializer=JSONSerializer()
 
 sdf = app.dataframe(input_topic)
 
-def get_age_range(number):
-    if 0 <= number <= 12:
-        return "Children"
-    elif 13 <= number <= 17:
-         return "Teenager"
-    elif 18 <= number <= 34:
-        return "Young Adult"
-    else:
-        return "Elderly"
-
 def check_duplicities(id, state: State):
     # check state, if the name is already there then retrieve the count
     # default to 0 if the name wasn't in state
