@@ -23,9 +23,6 @@ def count_names(row: dict, state: State):
     print(new_state.get("Oppose"))
     print(new_state.get("Neutral"))
 
-    # 
-    row_counter += 1
-
     # return the updated row so more processing can be done on it
     return row_data
 
