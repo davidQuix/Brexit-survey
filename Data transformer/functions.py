@@ -19,7 +19,7 @@ def count_data(values, state: State):
     value_count += 1
 
     # store the new count in state
-    state.set(key, key)
+    state.set(key, value_count)
 
     return state
 
