@@ -15,7 +15,7 @@ def add_if_not_exists(arr, key):
 def set_key(key, state: State):
     empty_array = []
 
-    arr = state.get("keys", empty_array)
+    arr = state.get("keys", [])
     print(arr)
 
     add_if_not_exists(empty_array, key)
