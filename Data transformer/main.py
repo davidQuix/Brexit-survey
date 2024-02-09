@@ -53,6 +53,9 @@ def transform_data(row: dict, state: State):
         { "key": "Oppose_Young Adult", "total": state.get("Oppose", 0) },
         { "key": "Oppose_Adult", "total": state.get("Oppose", 0) }, 
         { "key": "Oppose_Elderly", "total": state.get("Oppose", 0) }, 
+        { "key": "Support_England", "total": state.get("England", 0) },  
+        { "key": "Oppose_England", "total": state.get("England", 0) }, 
+        { "key": "Neutral_England", "total": state.get("England", 0) }, 
     ]
 
     # Update row with the chart data defined above
