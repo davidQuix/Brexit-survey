@@ -78,7 +78,7 @@ def transform_data(row: dict, state: State):
     return row_data
 
 # Filter invalid votes
-sdf = sdf.filter(lambda row: row == {} or row["Valid"])
+# sdf = sdf.filter(lambda row: row == {} or row["Valid"])
 
 # Trasform data to char values
 sdf = sdf.apply(transform_data, stateful=True)
