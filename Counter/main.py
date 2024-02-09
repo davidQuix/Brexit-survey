@@ -13,7 +13,7 @@ sdf = app.dataframe(input_topic)
 def add_data(row: dict, state: State):
     # If no data (end) return row
     if row == {}:
-        state = State.delete("Valid")
+        state.delete("Valid")
         return row
 
     # Add Valid on the row to check duplicities
