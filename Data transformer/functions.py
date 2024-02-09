@@ -13,9 +13,9 @@ def add_if_not_exists(arr, key):
         arr.append(key)
 
 def store_key(key, state: State):
-    arr = state.get("keys", [])
+    arr = state.get("Keys", [])
     add_if_not_exists(arr, key)
-    state.set("keys", arr)
+    state.set("Keys", arr)
 
 def count_data(values, state: State):
     # get key from the current values

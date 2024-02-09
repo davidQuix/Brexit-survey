@@ -24,7 +24,7 @@ deployments:
   - name: Data analysis
     application: Counter
     deploymentType: Service
-    version: 141491065d0ff82299cb2eec9e5927195b364648
+    version: efaedfe5d87374d1d5ea590b0534a60a3c22101d
     resources:
       cpu: 200
       memory: 500
@@ -44,7 +44,7 @@ deployments:
   - name: Data transformer
     application: Data transformer
     deploymentType: Service
-    version: e685de6c03fb3da75ae0c4d45b554b52b7c12455
+    version: febe461dd8a2f2141911924439dd4dd737fe89bf
     resources:
       cpu: 200
       memory: 500
@@ -64,7 +64,7 @@ deployments:
   - name: Frontend chart
     application: Frontend chart
     deploymentType: Service
-    version: d80dcd82e48e3abd1fe85a60b37d1ac07cb52269
+    version: 4f2b4bfbfc4d24001acaefd3c7f415105bbabfa0
     resources:
       cpu: 200
       memory: 500
