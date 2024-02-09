@@ -9,7 +9,7 @@ Index,ID,Name,Age,Gender,Location,Vote
 8,H890123456,Christopher Clark,33,Male,Bristol,Neutral
 9,I901234567,Amanda Martinez,55,Female,Leeds,Support
 10,E567890123,Emma Davis,38,Female,Cardiff,Oppose
-11,K123456789,Olivia White,41,Female,Liverpool,Support
+11,K123456789,Olivia White,41,Female,Belfast,Support
 12,L234567890,William Harris,31,Male,Oxford,Support
 13,M345678901,Sophia Lee,48,Male,Cambridge,Support
 14,N456789012,Daniel Martin,39,Female,Brighton,Oppose
@@ -61,7 +61,7 @@ Index,ID,Name,Age,Gender,Location,Vote
 60,BH012345678,Sophia Russell,68,Female,Swansea,Oppose
 61,BI123456789,Adam Bailey,60,Male,Cardiff,Support
 62,C345678901,Alex Johnson,28,Non-binary,Glasgow,Neutral
-63,BK345678901,Lucas Stewart,26,Female,Glasgow,Neutral
+63,BK345678901,Lucas Stewart,26,Female,Belfast,Neutral
 64,BL456789012,Grace Butler,67,Male,London,Support
 65,BM567890123,Owen Morgan,36,Male,Manchester,Oppose
 66,BN678901234,Eva Wilson,53,Female,Birmingham,Neutral
