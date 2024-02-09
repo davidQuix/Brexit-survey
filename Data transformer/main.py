@@ -23,6 +23,8 @@ def transform_data(row: dict, state: State):
         row_counter = 0
         return row
 
+    print(state("Keys"))
+
     # Increate row counter
     row_counter +=1 
     
