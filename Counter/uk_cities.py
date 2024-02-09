@@ -12,7 +12,6 @@ england_cities = [
     "Leicester",
     "Coventry",
     "Bradford",
-    "Cardiff",
     "Bath",
     "Oxford",
     "Cambridge",
