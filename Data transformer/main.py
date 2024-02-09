@@ -19,11 +19,14 @@ def transform_data(row: dict, state: State):
     row_data = {}
 
     # If no data (end) return row and reset row counter
-    if row == {}:
+    if row == {}:        
+        # Reset store
+        for key in state.get("Keys", []):
+            state.delete(key)
         row_counter = 0
         return row
 
-    print(state.get("Keys", []))
+    print()
 
     # Increate row counter
     row_counter +=1 
