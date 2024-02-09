@@ -64,7 +64,7 @@ deployments:
   - name: Frontend chart
     application: Frontend chart
     deploymentType: Service
-    version: d80dcd82e48e3abd1fe85a60b37d1ac07cb52269
+    version: 4f2b4bfbfc4d24001acaefd3c7f415105bbabfa0
     resources:
       cpu: 200
       memory: 500
