@@ -105,7 +105,8 @@ def process_csv_file(csv_file):
 
 
     # generate a unique stream id for this data stream
-    stream_id = f"CSV_DATA_{str(random.randint(1, 100)).zfill(3)}"
+    # stream_id = f"CSV_DATA_{str(random.randint(1, 100)).zfill(3)}"
+    stream_id = "CSV_DATA_000"
 
     # Get the column headers as a list
     headers = df.columns.tolist()
