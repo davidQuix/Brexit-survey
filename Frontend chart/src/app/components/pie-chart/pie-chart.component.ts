@@ -23,10 +23,6 @@ export class PieChartComponent implements OnInit {
       plugins: {
         legend: {
           position: 'top',
-        },
-        title: {
-          display: true,
-          text: 'Chart.js Pie Chart'
         }
       }
     }
