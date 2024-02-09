@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ArcElement, CategoryScale, Chart, ChartConfiguration, Legend, LineController, LineElement, LinearScale, PieController, PointElement, Tooltip } from 'chart.js';
 
 @Component({
@@ -12,10 +12,10 @@ export class PieChartComponent implements OnInit {
   configuration: ChartConfiguration = {
     type: 'pie',
     data: {
-      labels: ["Support", "Oppose", "Neutral"],
+      labels: [],
       datasets: [{
         backgroundColor: ["#FF0000", "#0000FF", "#999999"],
-        data: [418, 434, 100]
+        data: []
       }]
     },
     options: {
@@ -30,6 +30,13 @@ export class PieChartComponent implements OnInit {
         }
       }
     }
+  }
+
+  @Input() set labels(labels: string[]) {
+    this.configuration.data.labels = labels;
+  }
+  @Input() set data(data: number[]) {
+    this.configuration.data.datasets[0].data = data;
   }
 
   constructor() {
