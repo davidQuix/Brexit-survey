@@ -18,10 +18,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.values$ = this.quixService.paramDataReceived$.pipe(map((m) => m.numericValues));
 
-    this.values$.subscribe((values) => {
-      console.log(values)
-    })
-
     this.quixService.readerConnStatusChanged$.subscribe((status) => {
       if (status !== ConnectionStatus.Connected) return;
       this.workspaceId = this.quixService.workspaceId;
