@@ -1,4 +1,8 @@
+<h1 class="mat-h1">Brexit Survey</h1>
+
 <ng-container *ngIf="(values$ | async) as values">
+  <h3 class="mat-h3">Total votes: {{ values['Total_votes'][0]}}</h3>
+
   <div [style.width.px]="500">
     <app-pie-chart
       [data]="[values['Support'][0], values['Oppose'][0], values['Neutral'][0]]"
