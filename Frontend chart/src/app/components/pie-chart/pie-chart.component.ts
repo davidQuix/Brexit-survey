@@ -36,9 +36,8 @@ export class PieChartComponent implements OnInit {
     this.configuration.data.labels = labels;
   }
   @Input() set data(data: number[]) {
-    console.log(data)
     this.configuration.data.datasets[0].data = data;
-    this.chart.update();
+    this.chart?.update();
   }
 
   constructor() {
