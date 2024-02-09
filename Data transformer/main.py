@@ -33,6 +33,7 @@ def transform_data(row: dict, state: State):
     
     # Add valid on the row to check duplicities
     functions.count_data([row["Vote"]], state)
+    functions.count_data([row["UK_country"]], state)
     functions.count_data([row["Vote"], row["Gender"]], state)
     functions.count_data([row["Vote"], row["Age_range"]], state)
     functions.count_data([row["Vote"], row["UK_country"]], state)
