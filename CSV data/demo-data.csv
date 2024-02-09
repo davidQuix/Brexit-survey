@@ -17,7 +17,7 @@ Index,ID,Name,Age,Gender,Location,Vote
 16,P678901234,Grace Rodriguez,34,Male,Plymouth,Oppose
 17,Q789012345,Oliver Walker,24,Female,Norwich,Support
 18,R890123456,Chloe Young,30,Male,Sheffield,Oppose
-19,S901234567,Ethan Edwards,57,Male,Aberdeen,Support
+19,S901234567,Ethan Edwards,57,Male,Aberdeen,Oppose
 20,T012345678,Mia Hall,36,Female,Swansea,Oppose
 21,U123456789,William Thompson,59,Male,Cardiff,Support
 22,V234567890,Lucy Lewis,40,Female,Belfast,Oppose
@@ -37,7 +37,7 @@ Index,ID,Name,Age,Gender,Location,Vote
 36,AJ678901234,Oscar Baker,35,Male,Plymouth,Oppose
 37,AK789012345,Scarlett Murphy,54,Female,Norwich,Support
 38,AL890123456,Lucas Carter,31,Male,Sheffield,Oppose
-39,AM901234567,Ruby Hayes,47,Male,Aberdeen,Support
+39,AM901234567,Ruby Hayes,47,Male,Aberdeen,Oppose
 40,AN012345678,Jacob Butler,38,Female,Swansea,Oppose
 41,AO123456789,Lily Adams,60,Male,Cardiff,Support
 42,AP234567890,Luke Mitchell,39,Female,Belfast,Oppose
@@ -57,7 +57,7 @@ Index,ID,Name,Age,Gender,Location,Vote
 56,BD678901234,Harper Bell,36,Male,Plymouth,Oppose
 57,BE789012345,Ethan Cox,53,Female,Norwich,Support
 58,BF890123456,Lily Edwards,30,Male,Sheffield,Oppose
-59,BG901234567,Isaac Price,46,Male,Aberdeen,Support
+59,BG901234567,Isaac Price,46,Male,Aberdeen,Oppose
 60,BH012345678,Sophia Russell,68,Female,Swansea,Oppose
 61,BI123456789,Adam Bailey,60,Male,Cardiff,Support
 62,C345678901,Alex Johnson,28,Non-binary,Glasgow,Neutral
