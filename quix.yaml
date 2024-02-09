@@ -44,7 +44,7 @@ deployments:
   - name: Data transformer
     application: Data transformer
     deploymentType: Service
-    version: febe461dd8a2f2141911924439dd4dd737fe89bf
+    version: 0c1ca3ab3ede94652d4827456388af7b3101edb4
     resources:
       cpu: 200
       memory: 500
