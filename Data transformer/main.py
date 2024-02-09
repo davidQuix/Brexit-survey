@@ -35,6 +35,7 @@ def transform_data(row: dict, state: State):
     functions.count_data([row["Vote"]], state)
     functions.count_data([row["Vote"], row["Gender"]], state)
     functions.count_data([row["Vote"], row["Age_range"]], state)
+    functions.count_data([row["Vote"], row["UK_country"]], state)
 
     # The chart data that we want to set on the row
     values = [ 
