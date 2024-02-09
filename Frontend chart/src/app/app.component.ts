@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MediaObserver } from '@angular/flex-layout';
 import { ConnectionStatus, QuixService } from './services/quix.service';
 import { ParameterData } from './models';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,13 +11,16 @@ import { ParameterData } from './models';
 })
 export class AppComponent implements OnInit {
   workspaceId: string;
+  values$: Observable<{ [key: string]: number[] }>
 
-  constructor(private quixService: QuixService, public media: MediaObserver) { }
+  constructor(private quixService: QuixService) { }
 
   ngOnInit(): void {
-    this.quixService.paramDataReceived$.subscribe((parameter: ParameterData) => {
-      console.log(parameter)
-    });
+    this.values$ = this.quixService.paramDataReceived$.pipe(map((m) => m.numericValues));
+
+    this.values$.subscribe((values) => {
+      console.log(values)
+    })
 
     this.quixService.readerConnStatusChanged$.subscribe((status) => {
       if (status !== ConnectionStatus.Connected) return;
