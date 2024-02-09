@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
       if (status !== ConnectionStatus.Connected) return;
       this.workspaceId = this.quixService.workspaceId;
       const topicId = this.quixService.workspaceId + '-' + this.quixService.chartDataTopic;
-      this.quixService.subscribeToParameter(topicId, '*', 'Support');
+      this.quixService.subscribeToParameter(topicId, '*', '*');
     });
   }
 }
