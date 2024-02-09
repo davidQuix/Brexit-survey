@@ -15,6 +15,37 @@
     </div>
 
     <div fxLayout="row" fxLayoutGap="20px" class="mb-4">
+      <div [style.width.px]="400">
+        <h3 class="mat-h3 text-center">Results from England</h3>
+        <app-pie-chart
+          [data]="[values['Support_England'][0], values['Oppose_England'][0], values['Neutral_England'][0]]"
+          [labels]="['Support', 'Oppose', 'Neutral']">
+        </app-pie-chart>
+      </div>
+      <div [style.width.px]="400">
+        <h3 class="mat-h3 text-center">Results from Scotland</h3>
+        <app-pie-chart
+          [data]="[values['Support_Scotland'][0], values['Oppose_Scotland'][0], values['Neutral_Scotland'][0]]"
+          [labels]="['Support', 'Oppose', 'Neutral']">
+        </app-pie-chart>
+      </div>
+      <div [style.width.px]="400">
+        <h3 class="mat-h3 text-center">Results from Wales</h3>
+        <app-pie-chart
+          [data]="[values['Support_Wales'][0], values['Oppose_Wales'][0], values['Neutral_Wales'][0]]"
+          [labels]="['Support', 'Oppose', 'Neutral']">
+        </app-pie-chart>
+      </div>
+      <div [style.width.px]="400">
+        <h3 class="mat-h3 text-center">Results from North Ireland</h3>
+        <app-pie-chart
+          [data]="[values['Support_North Ireland'][0], values['Oppose_North Ireland'][0], values['Neutral_North Ireland'][0]]"
+          [labels]="['Support', 'Oppose', 'Neutral']">
+        </app-pie-chart>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="20px" class="mb-4">
       <div [style.width.px]="500">
         <h3 class="mat-h3 text-center">"Oppose" by gender</h3>
         <app-pie-chart
@@ -46,37 +77,6 @@
         <app-pie-chart
           [data]="[values['Support_Young Adult'][0], values['Support_Adult'][0], values['Support_Elderly'][0]]"
           [labels]="['Young Adult', 'Adult', 'Elderly']">
-        </app-pie-chart>
-      </div>
-    </div>
-
-    <div fxLayout="row" fxLayoutGap="20px" class="mb-4">
-      <div [style.width.px]="350">
-        <h3 class="mat-h3 text-center">Results from England</h3>
-        <app-pie-chart
-          [data]="[values['Support_England'][0], values['Oppose_England'][0], values['Neutral_England'][0]]"
-          [labels]="['Support', 'Oppose', 'Neutral']">
-        </app-pie-chart>
-      </div>
-      <div [style.width.px]="350">
-        <h3 class="mat-h3 text-center">Results from Scotland</h3>
-        <app-pie-chart
-          [data]="[values['Support_Scotland'][0], values['Oppose_Scotland'][0], values['Neutral_Scotland'][0]]"
-          [labels]="['Support', 'Oppose', 'Neutral']">
-        </app-pie-chart>
-      </div>
-      <div [style.width.px]="350">
-        <h3 class="mat-h3 text-center">Results from Wales</h3>
-        <app-pie-chart
-          [data]="[values['Support_Wales'][0], values['Oppose_Wales'][0], values['Neutral_Wales'][0]]"
-          [labels]="['Support', 'Oppose', 'Neutral']">
-        </app-pie-chart>
-      </div>
-      <div [style.width.px]="350">
-        <h3 class="mat-h3 text-center">Results from North Ireland</h3>
-        <app-pie-chart
-          [data]="[values['Support_North Ireland'][0], values['Oppose_North Ireland'][0], values['Neutral_North Ireland'][0]]"
-          [labels]="['Support', 'Oppose', 'Neutral']">
         </app-pie-chart>
       </div>
     </div>
