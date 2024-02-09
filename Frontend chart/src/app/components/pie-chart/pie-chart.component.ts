@@ -35,10 +35,12 @@ export class PieChartComponent implements OnInit {
   @Input() set labels(labels: string[]) {
     this.configuration.data.labels = labels;
   }
+  @Input() set colors(colors: string[]) {
+    this.configuration.data.datasets[0].backgroundColor = colors;
+  }
   @Input() set data(data: number[]) {
-    console.log(data)
     this.configuration.data.datasets[0].data = data;
-    this.chart.update();
+    this.chart?.update();
   }
 
   constructor() {

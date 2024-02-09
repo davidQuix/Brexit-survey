@@ -1,12 +1,35 @@
-<h1 class="mat-h1">Brexit Survey</h1>
+<div class="p-3">
+  <h1 class="mat-h1">Brexit Survey</h1>
 
-<ng-container *ngIf="(values$ | async) as values">
-  <h3 class="mat-h3">Total votes: {{ values['Total_votes'][0]}}</h3>
+  <ng-container *ngIf="(values$ | async) as values">
+    <h3 class="mat-h2">Total votes: {{ values['Total_votes'][0]}}</h3>
 
-  <div [style.width.px]="500">
-    <app-pie-chart
-      [data]="[values['Support'][0], values['Oppose'][0], values['Neutral'][0]]"
-      [labels]="['Support', 'Oppose', 'Neutral']">
-    </app-pie-chart>
-  </div>
-</ng-container>
+    <div fxLayout="row" fxLayoutGap="20px" class="mb-3">
+      <div [style.width.px]="500">
+        <h4 class="mat-h3">General results</h4>
+        <app-pie-chart
+          [data]="[values['Support'][0], values['Oppose'][0], values['Neutral'][0]]"
+          [labels]="['Support', 'Oppose', 'Neutral']">
+        </app-pie-chart>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="20px" class="mb-3">
+      <div [style.width.px]="500">
+        <h4 class="mat-h3">"Oppose" by gender</h4>
+        <app-pie-chart
+          [data]="[values['Oppose_Female'][0], values['Oppose_Male'][0]]"
+          [labels]="['Female', 'Male']">
+        </app-pie-chart>
+      </div>
+
+      <div [style.width.px]="500">
+        <h4 class="mat-h3">"Support" by gender</h4>
+        <app-pie-chart
+          [data]="[values['Support_Female'][0], values['Support_Male'][0]]"
+          [labels]="['Female', 'Male']">
+        </app-pie-chart>
+      </div>
+    </div>
+  </ng-container>
+</div>
