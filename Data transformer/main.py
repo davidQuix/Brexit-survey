@@ -33,24 +33,41 @@ def transform_data(row: dict, state: State):
     
     # Add valid on the row to check duplicities
     functions.count_data([row["Vote"]], state)
+    functions.count_data([row["UK_country"]], state)
     functions.count_data([row["Vote"], row["Gender"]], state)
     functions.count_data([row["Vote"], row["Age_range"]], state)
+    functions.count_data([row["Vote"], row["UK_country"]], state)
 
     # The chart data that we want to set on the row
     values = [ 
         { "key": "Support", "total": row_counter }, 
         { "key": "Oppose", "total": row_counter },
         { "key": "Neutral", "total": row_counter },
-        { "key": "Support_Female", "total": state.get("Support", 0) }, 
-        { "key": "Support_Male", "total": state.get("Support", 0) },   
-        { "key": "Oppose_Female", "total": state.get("Oppose", 0) },  
-        { "key": "Oppose_Male", "total": state.get("Oppose", 0) },
-        { "key": "Support_Young Adult", "total": state.get("Support", 0) },
-        { "key": "Support_Adult", "total": state.get("Support", 0) }, 
-        { "key": "Support_Elderly", "total": state.get("Support", 0) }, 
-        { "key": "Oppose_Young Adult", "total": state.get("Oppose", 0) },
-        { "key": "Oppose_Adult", "total": state.get("Oppose", 0) }, 
-        { "key": "Oppose_Elderly", "total": state.get("Oppose", 0) }, 
+        { "key": "Support_Female", "total": state.get("Support") }, 
+        { "key": "Support_Male", "total": state.get("Support") },   
+        { "key": "Oppose_Female", "total": state.get("Oppose") },  
+        { "key": "Oppose_Male", "total": state.get("Oppose") },
+        { "key": "Support_Young Adult", "total": state.get("Support") },
+        { "key": "Support_Adult", "total": state.get("Support") }, 
+        { "key": "Support_Elderly", "total": state.get("Support") }, 
+        { "key": "Oppose_Young Adult", "total": state.get("Oppose") },
+        { "key": "Oppose_Adult", "total": state.get("Oppose") }, 
+        { "key": "Oppose_Elderly", "total": state.get("Oppose") }, 
+        { "key": "Support_England", "total": state.get("England") },  
+        { "key": "Oppose_England", "total": state.get("England") }, 
+        { "key": "Neutral_England", "total": state.get("England") }, 
+        { "key": "Support_Scotland", "total": state.get("Scotland") },  
+        { "key": "Oppose_Scotland", "total": state.get("Scotland") }, 
+        { "key": "Neutral_Scotland", "total": state.get("Scotland") }, 
+        { "key": "Support_Wales", "total": state.get("Wales") },  
+        { "key": "Oppose_Wales", "total": state.get("Wales") }, 
+        { "key": "Neutral_Wales", "total": state.get("Wales") }, 
+        { "key": "Support_Wales", "total": state.get("Wales") },  
+        { "key": "Oppose_Wales", "total": state.get("Wales") }, 
+        { "key": "Neutral_Wales", "total": state.get("Wales") }, 
+        { "key": "Support_North Ireland", "total": state.get("North Ireland") },  
+        { "key": "Oppose_North Ireland", "total": state.get("North Ireland") }, 
+        { "key": "Neutral_North Ireland", "total": state.get("North Ireland") }, 
     ]
 
     # Update row with the chart data defined above
